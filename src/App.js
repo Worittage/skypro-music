@@ -18,7 +18,7 @@ function App() {
           <ul className="menu__list">
             <li className="menu__item">
               <a href="/" className="menu__link">
-                
+                Главное
               </a>
             </li>
             <li className="menu__item">
@@ -612,10 +612,10 @@ function App() {
                   </div>
                 </div>
                 <div className="track__author">
-                  <a className="track__author-link" href="/" > </a>
+                  <a className="track__author-link" href="http://" > </a>
                 </div>
                 <div className="track__album">
-                  <a className="track__album-link" href="/"> </a>
+                  <a className="track__album-link" href="http://" > </a>
                 </div>
                 <div className="track__time">
                   <svg className="track__time-svg" alt="time">
