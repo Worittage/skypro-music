@@ -34,6 +34,7 @@ function App() {
           </ul>
         </div>
       </nav>
+
       <div className="main__centerblock centerblock">
         <div className="centerblock__search search">
           <svg className="search__svg">
@@ -628,6 +629,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div className="main__sidebar sidebar">
         <div className="sidebar__personal">
           <p className="sidebar__personal-name">Sergey.Ivanov</p>
@@ -669,7 +671,9 @@ function App() {
           </div>
         </div>
       </div>
+
     </main>
+
     <div className="bar">
       <div className="bar__content">
         <div className="bar__player-progress" />
@@ -753,6 +757,7 @@ function App() {
         </div>
       </div>
     </div>
+    
     <footer className="footer" />
   </div>
 </div>
