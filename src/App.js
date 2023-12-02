@@ -1,20 +1,12 @@
 import './App.css';
-import Centerblock from './components/mainComponents/centerblockComponent/Centerblock';
-import Nav from './components/mainComponents/navComponent/Nav';
-import Siedbar from './components/mainComponents/sidebarComponent/Siedbar';
+import Main from "./components/mainComponents/Main"
+
 
 function App() {
   return (
 <div className="wrapper">
   <div className="container">
-    <main className="main">
-    <Nav />
-
-    <Centerblock />
-
-      <Siedbar />
-
-    </main>
+    <Main />
 
     <div className="bar">
       <div className="bar__content">
