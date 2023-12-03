@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Menu extends Component {
-  render() {
+const Menu = () => {
+  
     return (
       <div>
          <div className="nav__menu menu">
@@ -26,6 +26,6 @@ export class Menu extends Component {
       </div>
     )
   }
-}
+
 
 export default Menu

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Logo extends Component {
-  render() {
+const Logo = () => {
+  
     return (
       <div>
          <div className="nav__logo logo">
@@ -10,6 +10,6 @@ export class Logo extends Component {
       </div>
     )
   }
-}
+
 
 export default Logo
