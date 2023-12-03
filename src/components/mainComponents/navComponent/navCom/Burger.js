@@ -12,7 +12,7 @@ const Burger = () => {
   
     return (
       <div>
-         <div onClick={toggleVisibility} className="nav__burger burger">
+         <div onClick={toggleVisibility} className={`nav__burger burger ${visible ? '' : 'burger-open'}`}>
          
             <span className="burger__line" />
             <span className="burger__line" />
