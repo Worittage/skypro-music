@@ -8,9 +8,11 @@ export class Main extends Component {
     return (
       <div>
         <main className="main">
+        
     <Nav />
-    <Centerblock />
+     <Centerblock /> 
     <Siedbar />
+    
 
     </main>
       </div>

@@ -38,7 +38,7 @@ ul li {
 
 html,
 body {
-  width: 100%;
+  width: auto;
   height: 100%;
   font-family: "StratosSkyeng", sans-serif;
   color: #ffffff;
@@ -52,11 +52,12 @@ body {
 }
 
 .container {
-  max-width: 1920px;
-  height: 100vh;
-  margin: 0 auto;
+  width: 100%;
+  max-width: auto; /* Замените 1200px на желаемое значение максимальной ширины */
+  margin: 0 auto; 
   position: relative;
   background-color: #181818;
+  zoom: 90%;
 }
 
 ._btn-text:hover {
@@ -101,25 +102,25 @@ body {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main__nav {
-  width: 244px;
+  width: 150px;
   background-color: #181818;
   padding: 20px 0 20px 36px;
 }
 
 .main__centerblock {
-  width: auto;
+  width: 1136px;
   -webkit-box-flex: 3;
   -ms-flex-positive: 3;
   flex-grow: 3;
-  padding: 20px 40px 20px 111px;
+  padding: 0 40px 20px 0;
 }
 
 .main__sidebar {
-  max-width: 418px;
+  max-width: 300px;
   padding: 20px 90px 20px 78px;
 }
 
