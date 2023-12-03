@@ -15,7 +15,7 @@ export class Main extends Component {
     
 
     </main>
-      </div>
+      </div> 
     )
   }
 }
