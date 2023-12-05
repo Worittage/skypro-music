@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
+import React, { } from 'react'
 
-export class Siedbar extends Component {
-  render() {
+
+
+function Siedbar(props) {
+  
     return (
       <div>
         <div className="main__sidebar sidebar">
@@ -48,6 +50,6 @@ export class Siedbar extends Component {
       </div>
     )
   }
-}
+
 
 export default Siedbar
