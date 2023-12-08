@@ -4,7 +4,7 @@ export class Bar extends Component {
   render() {
     return (
       <div>
-         <div className="bar">
+          <div className="bar">
       <div className="bar__content">
         <div className="bar__player-progress" />
         <div className="bar__player-block">
