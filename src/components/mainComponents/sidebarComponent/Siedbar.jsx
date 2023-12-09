@@ -4,7 +4,7 @@ function Sidebar(props) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Задаем таймер для изменения состояния после 3000 миллисекунд (3 секунды)
+    // Задаем таймер для изменения состояния после 3000 миллисекунд (5 секунды)
     const timer = setTimeout(() => {
       setLoading(false);
     }, 5000);
