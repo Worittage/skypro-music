@@ -7,7 +7,7 @@ function Sidebar(props) {
     // Задаем таймер для изменения состояния после 3000 миллисекунд (3 секунды)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 5000);
 
     // Очистка таймера при размонтировании компонента
     return () => clearTimeout(timer);
