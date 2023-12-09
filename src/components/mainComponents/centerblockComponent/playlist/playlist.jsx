@@ -35,11 +35,23 @@ const Playlist = (props) => {
                         
                      
                   </div>
-                  <div className="track__title-text">
+
+                            {loading ? (
+                                <div className='playList__title-text' style={{ backgroundColor: '#313131',
+                                width: 356, height: 19
+                                }}>
+
+                                </div>
+                                ) : (
+                                    <div className="track__title-text">
                     <a className="track__title-link" href="http://">
                       Guilt <span className="track__title-span" />
                     </a>
                   </div>
+                                )
+                            }
+
+                  
                 </div>
                 <div className="track__author">
                   <a className="track__author-link" href="http://">
@@ -601,7 +613,7 @@ const Playlist = (props) => {
                 </div>
               </div>
             </div>
-            
+
           </div>
     )
 }
