@@ -1,15 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-const Playlist = () => {
+const Playlist = (props) => {
+
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+         // Задаем таймер для изменения состояния после 3000 миллисекунд (5 секунды)
+         const timer = setTimeout(() => {
+            setLoading(false)
+         }, 5000)
+         // Очистка таймера при размонтировании компонента
+         return () => clearTimeout(timer)
+    }, []);
+
     return (
         <div className="content__playlist playlist">
             <div className="playlist__item">
-              <div className="playlist__track track">
+                <div className="playlist__track track">
                 <div className="track__title">
-                  <div className="track__title-image">
-                    <svg className="track__title-svg" alt="music">
-                      <use xlinkHref="img/icon/sprite.svg#icon-note" />
+                    <div className="track__title-image">
+                    
+                        {loading ? (
+                            <div className='playlist__img-skeleton' style={{ backgroundColor: '#313131',
+                            width: 51, height: 51
+                        }}>
+
+                        </div>
+                        ) : (
+                            <svg className="track__title-svg" alt="music">
+                                 <use xlinkHref="img/icon/sprite.svg#icon-note" />
                     </svg>
+                        )} 
+                            
+                        
+                     
                   </div>
                   <div className="track__title-text">
                     <a className="track__title-link" href="http://">
@@ -28,13 +52,16 @@ const Playlist = () => {
                   </a>
                 </div>
                 <div className="track__time">
+                            
                   <svg className="track__time-svg" alt="time">
                     <use xlinkHref="img/icon/sprite.svg#icon-like" />
                   </svg>
+
                   <span className="track__time-text">4:44</span>
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -67,6 +94,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -99,6 +127,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -132,6 +161,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -165,6 +195,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -200,6 +231,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -235,6 +267,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -268,6 +301,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -301,6 +335,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -334,6 +369,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -367,6 +403,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -400,6 +437,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -433,6 +471,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -466,6 +505,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -499,6 +539,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -531,6 +572,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+
             <div className="playlist__item">
               <div className="playlist__track track">
                 <div className="track__title">
@@ -559,6 +601,7 @@ const Playlist = () => {
                 </div>
               </div>
             </div>
+            
           </div>
     )
 }
